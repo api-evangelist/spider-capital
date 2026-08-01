@@ -1,8 +1,24 @@
 aid: spider-capital
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spider-capital.png
 name: Spider Capital
-description: 'Spider Capital is a company surfaced as a portfolio company of foundry-group and added to
-  the API Evangelist network as a stub for enrichment. Sector: venture-capital. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Spider Capital is a seed-stage venture capital firm investing in applied-AI enterprise
+  cloud software that modernizes complex industrial sectors. The firm backs founders across construction,
+  financial services, energy, government, healthcare, insurance, mining, manufacturing, supply chain, and
+  transportation, citing 100+ enterprise cloud investments, a 70%+ seed-to-Series-A graduation rate, and
+  portfolio companies including Mechanical Orchard, Imubit, CoLab, Percepto, Codoxo, Klir, Elara Spatial,
+  and Logiwa. Surfaced as a portfolio company of foundry-group; it publishes no public API or developer
+  surface (venture-capital firm), so this profile carries firm identity rather than API artifacts.'
 url: https://raw.githubusercontent.com/api-evangelist/spider-capital/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Venture Capital
+- Seed Stage
+- Applied AI
+- Enterprise Software
+- Industrial
+- Investment
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,21 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/spider-capital-domain-security.yml
 - type: Website
   url: https://www.spidercapital.com
+- type: Blog
+  name: News
+  url: https://www.spidercapital.com/news
+- type: TermsOfService
+  url: https://www.spidercapital.com/legal
+- type: Support
+  name: Contact
+  url: mailto:contact@spidercapital.com
+
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
